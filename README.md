@@ -33,7 +33,7 @@
 - [Soumya Vemuri]() 
 - [Aiesha Fathima]()
 - [Archit Kuhar]()
-- [Saurabh Kemekar]()
+- [Saurabh Kemekar](https://www.linkedin.com/in/saurabh-kemekar-a8589710b/)
 - [Akshaj Sunil]()
 - [Malvika Jindal]()
 
