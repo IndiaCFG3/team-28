@@ -20,8 +20,8 @@
 
 ```bash
 $ # Get the code
-$ git clone https://github.com/app-generator/django-dashboard-dattaable.git
-$ cd django-dashboard-dattaable
+$ git clone https://github.com/IndiaCFG3/team-28.git
+$ cd team-28
 $
 $ # Virtualenv modules installation (Unix based systems)
 $ virtualenv env
