@@ -13,5 +13,6 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('WAForm', views.WAForm, name='WAForm'),
     path('grades', views.grades, name='grades'),
+    path('SMSForm', views.SMSForm, name='SMSForm'),
 
 ]
