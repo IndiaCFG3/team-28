@@ -71,3 +71,12 @@ def SMSForm(request):
 		return render(request, "index.html")
 	else:
 		return render(request, "ui-forms.html")
+
+def grades(request):
+	file1 = open('myfile.txt', 'r') 
+	text=[]
+	Lines = file1.readlines()
+	for line in Lines:
+		text.append(line)
+	
+	return render(request,"index.html",{'students':text})
