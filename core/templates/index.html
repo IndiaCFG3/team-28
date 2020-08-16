@@ -87,48 +87,16 @@
                                     <div class="table-responsive">
                                         <table class="table table-hover">
                                             <tbody>
+                                                {% for stud in students %}
                                                 <tr class="unread">
                                                     <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-1.jpg" alt="activity-user"></td>
                                                     <td>
-                                                        <h6>Mathilde Andersen</h6>
-                                                        <p>{{sol1}}</p>
-                                                    </td>
-                                                    
-                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Submit</a><input type="number"></td>
-                                                </tr>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-2.jpg" alt="activity-user"></td>
-                                                    <td>
-                                                        <h6>John</h6>
-                                                        <p>{{sol2}}</p>
-                                                      
+                                                        <h6>Ram</h6>
+                                                        <p>{{ stud }}</p>
                                                     </td>
                                                     <td><a href="#!" class="label theme-bg2 text-white f-12">Submit</a><input type="number"></td>
                                                 </tr>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-3.jpg" alt="activity-user"></td>
-                                                    <td>
-                                                        <h6>Priya</h6>
-                                                        <p>{{sol3}}</p>
-                                                    </td>
-                                                   <td><a href="#!" class="label theme-bg2 text-white f-12">Submit</a><input type="number"></td>
-                                                </tr>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-1.jpg" alt="activity-user"></td>
-                                                    <td>
-                                                        <h6>Rahul</h6>
-                                                        <p>{{sol4}}</p>
-                                                    </td>
-                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Submit</a><input type="number"></td>
-                                                </tr>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-2.jpg" alt="activity-user"></td>
-                                                    <td>
-                                                       <h6>Rahul</h6>
-                                                        <p>{{sol4}}</p>
-                                                    </td>
-                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Submit</a><input type="number"></td>
-                                                </tr>
+                                                {% endfor %}
                                             </tbody>
                                         </table>
                                     </div>
@@ -146,10 +114,10 @@
                                             <h5 class="m-0">Submissions</h5>
                                         </div>
                                         <div class="col-auto">
-                                            <label class="label theme-bg2 text-white f-14 f-w-400 float-right">no. of submissions %</label>
+                                            <label class="label theme-bg2 text-white f-14 f-w-400 float-right">{{ students|length }} </label> 
                                         </div>
                                     </div>
-                                    <h2 class="mt-3 f-w-300">no. of sub<sub class="text-muted f-14">submissions</sub></h2>
+                                    <h2 class="mt-3 f-w-300">{{ students|length }}<sub class="text-muted f-14">submissions</sub></h2>
                                     
                                     <i class="fab fa-angellist text-c-purple f-50"></i>
                                 </div>

@@ -15,9 +15,7 @@ client = Client(account_sid, auth_token)
 @login_required(login_url="/login/")
 def index(request):
 
-	file1 = open('myfile.txt', 'r') 
-	Lines = file1.readlines()
-	print(Lines) 
+	
 	return render(request, "index.html")
 
 @login_required(login_url="/login/")
@@ -75,3 +73,12 @@ def SMSForm(request):
 		return render(request, "index.html")
 	else:
 		return render(request, "ui-forms.html")
+
+def grades(request):
+	file1 = open('myfile.txt', 'r') 
+	text=[]
+	Lines = file1.readlines()
+	for line in Lines:
+		text.append(line)
+	print(Lines)
+	return render(request,"index.html",{'students':text})

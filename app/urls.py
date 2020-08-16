@@ -12,4 +12,6 @@ urlpatterns = [
     # The home page
     path('', views.index, name='home'),
     path('WAForm', views.WAForm, name='WAForm'),
+    path('grades', views.grades, name='grades'),
+
 ]
