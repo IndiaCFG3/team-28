@@ -14,6 +14,10 @@ client = Client(account_sid, auth_token)
 
 @login_required(login_url="/login/")
 def index(request):
+
+	file1 = open('myfile.txt', 'r') 
+	Lines = file1.readlines()
+	print(Lines) 
 	return render(request, "index.html")
 
 @login_required(login_url="/login/")

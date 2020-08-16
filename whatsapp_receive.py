@@ -34,7 +34,7 @@ def bot():
         
         
         mess=incoming_msg
-        file1 = open("myfile.txt","w+") 
+        file1 = open("myfile.txt","a+") 
         
   
  
@@ -49,4 +49,4 @@ def bot():
 
 
 if __name__ == '__main__':
-    app.run(port=8000)
+    app.run(port=5000)
