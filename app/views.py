@@ -10,10 +10,17 @@ from twilio.rest import Client
 
 account_sid = 'AC2c49d79585a7af83ac6b40e578e92ffb'
 auth_token = '3da1954c71039122aa4e1f0b45180c20'
+
+account_sid_sms = "AC2c49d79585a7af83ac6b40e578e92ffb"
+auth_token_sms = "3da1954c71039122aa4e1f0b45180c20"
+
+
 client = Client(account_sid, auth_token)
 
 @login_required(login_url="/login/")
 def index(request):
+
+	
 	return render(request, "index.html")
 
 @login_required(login_url="/login/")
@@ -62,12 +69,30 @@ def WAForm(request):
 
 def SMSForm(request):
 	if request.method == "POST":
-		subject = request.POST['SMS_subject']
+		subject = request.POST['SMS_Subject']
 		class_id = request.POST['SMS_Select']
 		text = request.POST['SMS_Text']
-	#details=model_name.objects.create(subject=subject,class_id=class_id,text=text)
+		#details=model_name.objects.create(subject=subject,class_id=class_id,text=text)
 		#details.save();
 		print(subject)
-		return render(request, "index.html")
+
+		sms = client.messages.create(
+			from_ = "+13343423388",
+			body = "hello this first twilio------- Messages !!", 
+			to = "+918660902359"
+
+			)
+		print("Message Send!!")
+		print(sms.sid)
+		return render(request, "index.html",{'students':text})
 	else:
 		return render(request, "ui-forms.html")
+
+def grades(request):
+	file1 = open('myfile.txt', 'r') 
+	text=[]
+	Lines = file1.readlines()
+	for line in Lines:
+		text.append(line)
+	print(Lines)
+	return render(request,"index.html",{'students':text})

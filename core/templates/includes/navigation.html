@@ -1,12 +1,10 @@
 
     <nav class="pcoded-navbar">
         <div class="navbar-wrapper">
-            <div class="navbar-brand header-logo">
-                <a target="_blank" href="https://appseed.us/admin-dashboards/django-dashboard-dattaable" class="b-brand">
-                    <div class="b-bg">
-                        <i class="feather icon-trending-up"></i>
-                    </div>
-                    <span class="b-title">WebVipers - TBDF</span>
+            <div class="navbar header-logo">
+                <a href="#" class="b-brand">
+                    
+                    <span class="b-title">WebViper - TBDH</span>
                 </a>
                 <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
             </div>
@@ -19,11 +17,39 @@
                         <a href="/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
                     </li>
                     
-                    <li data-username="form elements advance componant validation masking wizard picker select" class="nav-item">
-                        <a href="/ui-forms.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Schedule an Assignment/Test</span></a>
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>Assignments</label>
                     </li>
-                    
-                   
+                    <li data-username="form elements advance componant validation masking wizard picker select" class="nav-item">
+                        <a href="/ui-forms.html" class="nav-link "><span class="pcoded-micon"><i class="fas fa-sms"></i></span><span class="pcoded-mtext">Whatsapp and SMS</span></a>
+                    </li>
+                    <li data-username="Table bootstrap datatable footable" class="nav-item">
+                        <a href="https://classroom.google.com/" class="nav-link "><span class="pcoded-micon"><i class="fas fa-chalkboard-teacher"></i></span><span class="pcoded-mtext">Google Classrooms</span></a>
+                    </li>
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>Lecture Content</label>
+                    </li>
+                    <li data-username="Table bootstrap datatable footable" class="nav-item">
+                        <a href="/lectures.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Lecture Material</span></a>
+                    </li>
+                    <li data-username="Table bootstrap datatable footable" class="nav-item"><a href="/lecture_videos.html" class="nav-link "><span class="pcoded-micon"><i class="far fa-play-circle"></i></span><span class="pcoded-mtext">Video Content</span></a></li>
+                    <li data-username="Table bootstrap datatable footable" class="nav-item">
+                        <a href="/schedules.html" class="nav-link "><span class="pcoded-micon"><i class="far fa-clipboard"></i></span><span class="pcoded-mtext">Schedules</span></a>
+                    </li>
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>Student Analysis</label>
+                    </li>
+                    <li data-username="Charts Morris" class="nav-item"><a href="/charts-morris.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span><span class="pcoded-mtext">Chart</span></a></li>
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>Pages</label>
+                    </li>
+                    <li data-username="Authentication Sign up Sign in reset password Change password Personal information profile settings map form subscribe" class="nav-item pcoded-hasmenu">
+                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-lock"></i></span><span class="pcoded-mtext">Authentication</span></a>
+                        <ul class="pcoded-submenu">
+                            <li class=""><a href="/auth-reset-pass.html" class="">Reset Pass</a></li>
+                            <li class=""><a href={% url 'register' %} class="">Register</a></li>
+                        </ul>
+                    </li>
                     <li data-username="Sample Page" class="nav-item"><a href="/page-blank.html" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
 
                     <li data-username="Disabled Menu" class="nav-item">
