@@ -8,11 +8,8 @@ from django import template
 from twilio.rest import Client
 
 
-account_sid = 'AC2c49d79585a7af83ac6b40e578e92ffb'
-auth_token = '3da1954c71039122aa4e1f0b45180c20'
-
-account_sid_sms = "AC2c49d79585a7af83ac6b40e578e92ffb"
-auth_token_sms = "3da1954c71039122aa4e1f0b45180c20"
+account_sid = '<sid from twilio dashboard>'
+auth_token = '<authentication token from twilio dashboard'
 
 
 client = Client(account_sid, auth_token)
