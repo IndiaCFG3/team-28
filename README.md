@@ -77,7 +77,5 @@ python manage.py runserver
 ---
 
 
----
-
 ## License ##
 - License to be added, if required by JPMC
