@@ -1,0 +1,136 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Tables {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="pcoded-content">
+        <div class="pcoded-inner-content">
+            <!-- [ breadcrumb ] start -->
+            <div class="page-header">
+                <div class="page-block">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <div class="page-header-title">
+                                <h5 class="m-b-10">Lecture Material</h5>
+                            </div>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="#!">Lecture Content</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:">Lecture Material</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ breadcrumb ] end -->
+            <div class="main-body">
+                <div class="page-wrapper">
+                    <!-- [ Main Content ] start -->
+                    <div class="row">
+                        <!-- [ Hover-table ] start -->
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Class 7</h5>
+                                    
+                                </div>
+                                <div class="card-block table-border-style">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Lecture Title</th>
+                                                    <th>Subject</th>
+                                                    <th>Date Uploaded</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Acids, Bases and Salts</td>
+                                                    <td>Science</td>
+                                                    <td>16-08-2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Heat</td>
+                                                    <td>Science</td>
+                                                    <td>10-08-2020</td
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Nutrition in Plants</td>
+                                                    <td>Science</td>
+                                                    <td>01-08-2020</td
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                </div>
+                                <button type="submit" class="btn btn-primary">Add Lecture Material</button>
+                            </div>
+                            
+                        </div>
+                        <!-- [ Hover-table ] end -->
+
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Class 8</h5>
+                                    
+                                </div>
+                                <div class="card-block table-border-style">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Lecture Title</th>
+                                                    <th>Subject</th>
+                                                    <th>Date Uploaded</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Synthetic Fibres and Plastics</td>
+                                                    <td>Science</td>
+                                                    <td>16-08-2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Coal and Petroleum</td>
+                                                    <td>Science</td>
+                                                    <td>12-08-2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Conservation of Plants and Animals</td>
+                                                    <td>Science</td>
+                                                    <td>02-08-2020</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Add Lecture Material</button>
+                            </div>
+                        </div>
+                        <!-- [ Hover-table ] end -->
+                    </div>
+                    <!-- [ Main Content ] end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
