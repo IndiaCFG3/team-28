@@ -1,3 +1,5 @@
 q1.apple q2.India q3.JPMC q4.CFG
 q1.orange q2.India q3.Microsoft q4.TBDF
-q1.banana q2.India q3.JPMC q4.TBDF 
+q1.banana q2.India q3.JPMC q4.TBDF True
+q2. India
+Vector
