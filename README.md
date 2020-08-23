@@ -4,8 +4,7 @@
 
 ## Table of Contents
 
-- [JPMC CFG Team-28](#jpmc-cfg-team-28)
-  - [Table of Contents](#table-of-contents)
+
   - [Installation](#installation)
   - [Features](#features)
   - [Team](#team)
@@ -74,12 +73,6 @@ python manage.py runserver
 - [Akshaj Sunil]()
 - [Malvika Jindal]()
 
-
----
-
-## More Details ##
-
-- More details of the `project`
 
 ---
 
